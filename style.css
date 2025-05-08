@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url("../fonts/Raleway-Bold.ttf");
+}
+
+/* Áp dụng font Raleway-Regular cho toàn bộ trang */
+body {
+    font-family: 'Raleway-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #777777;
+}
+
+/* Navbar */
+.navbar-light .navbar-nav .nav-link {
+    color: #272727;
+    font-family: 'Raleway-Regular', sans-serif;
+    font-size: 12px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    background-color: #ff3c41;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-size: 12px;
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+}
+
+/* Tiêu đề About Us */
+h3 {
+    font-size: 40px;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-weight: 700;
+    color: #3c3c3c;
+    letter-spacing: 2px;
+    padding: 60px 0 30px 0;
+}
+
+/* Hình ảnh trong About */
+.about_img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Căn giữa hình ảnh trên các màn hình nhỏ */
+}
+
+/* Nội dung About */
+.about_content {
+    padding-left: 20px;
+}
+
+.about_content p:first-child {
+    font-size: 20px;
+    color: #222222;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.about_content p {
+    font-size: 16px;
+    color: #777777;
+    font-family: 'Raleway-Regular', sans-serif;
+}
+
+.about_content button {
+    background: none;
+    border: 3px solid #76daff;
+    font-size: 12px;
+    font-family: 'Raleway-Bold', sans-serif;
+    color: #3c3c3c;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* Thanh phân cách */
+.line {
+    height: 1px;
+    background: #f7f7f7;
+    margin: 20px auto;
+}
+
+/* Biểu tượng Digital Solutions */
+.about_icon {
+    font-size: 40px;
+    color: #76daff;
+    font-family: 'Raleway-Regular', sans-serif;
+}
+
+/* Tiêu đề Digital Solutions */
+.about_service h4 {
+    font-size: 20px;
+    color: #222222;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+/* Đoạn văn Digital Solutions */
+.about_service p {
+    font-size: 16px;
+    color: #777777;
+    font-family: 'Raleway-Regular', sans-serif;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .about_img, .about_content {
+        text-align: center;
+    }
+    .about_content {
+        padding-left: 0;
+        padding-top: 20px; /* Thêm khoảng cách trên màn hình nhỏ */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-light .navbar-brand {
+        width: 50%;
+    }
+    .about_img {
+        display: none; /* Ẩn hình ảnh trên màn hình nhỏ */
+    }
+    .about_content {
+        padding-top: 0; /* Xóa padding-top khi hình ảnh bị ẩn */
+    }
+    .about_service h4, .about_service p {
+        text-align: center; /* Căn giữa nội dung Digital Solutions */
+    }
+}
