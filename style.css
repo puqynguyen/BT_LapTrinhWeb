@@ -53,7 +53,7 @@ h3 {
     max-width: 400px;
     height: auto;
     display: block;
-    margin: 0 auto; /* Căn giữa hình ảnh trên các màn hình nhỏ */
+    margin: 0 auto;
 }
 
 /* Nội dung About */
@@ -93,23 +93,36 @@ h3 {
 }
 
 /* Biểu tượng Digital Solutions */
-.about_icon {
+.service_icon i {
     font-size: 40px;
     color: #76daff;
-    font-family: 'Raleway-Regular', sans-serif;
+}
+
+/* Nội dung Digital Solutions */
+.service_icon .row {
+    margin: 0;
+}
+
+.service_icon .col-auto {
+    padding-right: 15px; /* Khoảng cách giữa icon và nội dung */
+}
+
+.service_icon .col {
+    padding-left: 0;
 }
 
 /* Tiêu đề Digital Solutions */
-.about_service h4 {
+.service_icon h4 {
     font-size: 20px;
     color: #222222;
     font-family: 'Raleway-Bold', sans-serif;
     font-weight: 100;
     letter-spacing: 2px;
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và đoạn văn */
 }
 
 /* Đoạn văn Digital Solutions */
-.about_service p {
+.service_icon p {
     font-size: 16px;
     color: #777777;
     font-family: 'Raleway-Regular', sans-serif;
@@ -122,7 +135,19 @@ h3 {
     }
     .about_content {
         padding-left: 0;
-        padding-top: 20px; /* Thêm khoảng cách trên màn hình nhỏ */
+        padding-top: 20px;
+    }
+    .service_icon .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service_icon .col-auto {
+        padding-right: 0;
+        margin-bottom: 15px; /* Khoảng cách giữa icon và nội dung trên màn hình nhỏ */
+    }
+    .service_icon .col {
+        padding-left: 0;
+        text-align: center;
     }
 }
 
@@ -131,12 +156,9 @@ h3 {
         width: 50%;
     }
     .about_img {
-        display: none; /* Ẩn hình ảnh trên màn hình nhỏ */
+        display: none;
     }
     .about_content {
-        padding-top: 0; /* Xóa padding-top khi hình ảnh bị ẩn */
-    }
-    .about_service h4, .about_service p {
-        text-align: center; /* Căn giữa nội dung Digital Solutions */
+        padding-top: 0;
     }
 }
